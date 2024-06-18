@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,400;1,500&display=swap'); 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none; 
+}
+
+:root{
+    --font-primary: "Baloo 2", serif;
+    --font-secundary:  "Josefin Slab", serif ;
+    --font-action: "Poppins", serif;
+}
+
+
+/* Código CSS para personalizar o menu do Bootstrap */
+.navbar {
+    background: linear-gradient(to right, #2980B9, #6DD5FA, #FFFFFF);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .nav-item {
+    margin-right: 10px; /* Ajuste o espaçamento conforme necessário */
+    border-right: 1px solid #ffffff; /* Adiciona uma borda divisória */
+}
+
+.navbar .nav-item:last-child {
+    border-right: none; /* Remove a borda do último item */
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s;
+}
+
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2980B9; /* Cor do quadrado */
+    transform: translateX(-50%) scaleY(0);
+    transition: transform 0.5s ease;
+    z-index: -1;
+}
+
+.navbar .nav-link:hover::after {
+    transform: translateX(-50%) scaleY(1);
+}
+
+.navbar .nav-link:hover {
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+.navbar .navbar-toggler {
+    border-color: #ffffff;
+}
+/* Ícone de alternador de navegação para telas menores (ícone 'hambúrguer') */
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.header{
+	width :100% ;
+	height :100vh ;
+	overflow :hidden ;
+	position:relative ;
+}
+
+.img-wrapper{
+	width :100% ;
+	height :100% ;
+	overflow :hidden ;
+	background-color :rgba(0,0,0,.8) ;
+}
+
+.img-wrapper img {
+	width :100% ;
+	height :100% ;
+	object-fit :cover ;
+	opacity :.8 ;
+	animation :zoom 25s ;
+}
+
+@keyframes zoom {
+	0%{
+		transform :scale(1.3) ; 
+	}
+	100%{
+		transform :scale(1) ;
+	}
+}
+
+/* Estilo padrão para .banner-content */
+.banner-content {
+    font-family: var(--font-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, .5);
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+/* Estilos responsivos para .banner-content em telas menores */
+@media (max-width: 720px) {
+    .banner-content {
+        display: none; /* Esconde o banner em telas menores que 480px */
+        top: 10%; /* Mantém o banner na parte superior do meio da tela */
+    
+    }
+}
+.banner-content button {
+	background: linear-gradient(to right, #2980B9, #6DD5FA, #FFFFFF);
+	color: #000000;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .1rem;
+	padding: 1rem 3rem;
+	border-width: 4px;
+	border-radius: 5px;
+	border-color: #ffffff;
+	cursor: pointer; 
+}
+
+
+
+/* Estilos para a nova seção do quadro de avisos com fundo azulado */
+#notice-board-section {
+  height: 100vh; /* Mesmo tamanho da seção anterior */
+  background-color: #70cbff; /* Fundo azulado */
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  text-align: center;
+}
+
+.notice-board {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparente esbranquiçado */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.notice-board .row {
+  display: flex;
+  justify-content: space-around; /* Espaçamento uniforme ao redor das colunas */
+}
+
+/* Estilos para os avisos com aparência profissional */
+.alert {
+  margin-bottom: 10px; /* Espaçamento entre os avisos */
+  font-family: var(--font-secondary);
+  font-weight: bold;
+}
+
+#notice-board-section h2 {
+  font-family: var(--font-primary);
+  text-align: center;
+}
+
+/* Aplica a fonte primária ao título 'Horários' */
+#schedule-section h2 {
+  font-family: var(--font-primary);
+  margin-bottom: 20px;
+}
+
+/* Estilo comum para as seções de horários */
+.schedule-section {
+padding-top: 20px; /* Espaçamento do topo */
+padding-bottom: 50px; /* Aumenta o espaçamento inferior */
+background-color: #0eadd4; /* Cor azul mais forte */
+}
+
+.schedule-section .container {
+padding: 20px; /* Ajuste conforme necessário */
+}
+
+.schedule-section h2 {
+margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Fundo branco para os quadros de horários */
+.table {
+background-color: rgb(191, 216, 214); /* Branco */
+}
+
+
+/* Para que o quadro de horários fique responsivo */
+@media (max-width: 720px) {
+  .table-responsive {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+  }
+
+  .table-responsive .table {
+      width: auto; /* Permite que a tabela se ajuste ao conteúdo interno */
+  }
+
+  .table-responsive .table thead,
+  .table-responsive .table tbody,
+  .table-responsive .table th,
+  .table-responsive .table td,
+  .table-responsive .table tr {
+      display: block; /* Muda o layout para blocos, empilhando-os verticalmente */
+  }
+
+  .table-responsive .table tr {
+      margin-bottom: 15px; /* Espaçamento entre os itens empilhados */
+  }
+
+  .table-responsive .table td {
+      text-align: right; /* Alinha o texto à direita para manter a consistência visual */
+  }
+
+  .table-responsive .table td:before {
+      content: attr(data-label); /* Adiciona um rótulo antes do conteúdo da célula */
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+}
+
+
+
+/* -------------------- Calendário escolar ----------------*/
+
+#school-calendar-section {
+  background-color: #80ced6; 
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+#school-calendar-section h2 {
+  font-family: var(--font-primary);
+  text-align: center;
+}
+
+#school-calendar-section img {
+  width: 100%; /* Ajusta a imagem para o tamanho do container */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.font-action {
+  font-family: var(--font-secondary)
+}
+
+  
+/*-------------------- Cursos e vagas------------------- */
+
+#courses-jobs-section {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  background-color: #9fccf1; /* Cor esbranquiçada */
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+  text-align: center;
+}
+
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+
+.jobs-column, .courses-column {
+  background-color: #dce8ff; /* Fundo branco para as colunas */
+  padding: 15px;
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+.jobs-column ul, .courses-column ul {
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0;
+}
+
+.jobs-column li, .courses-column li {
+  margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+/* Fale conosco */
+
+#contact-section {
+  background-color: #add8e6; /* Azul claro para o fundo da tela */
+  padding: 40px 0; /* Aumenta o padding vertical da seção */
+  min-height: 100vh; /* Altura mínima para preencher a tela */
+}
+
+.center-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form-container {
+  background-color: #f8f9fa; /* Cor esbranquiçada para o quadrado do formulário */
+  border: 1px solid #000; /* Borda preta */
+  padding: 30px;
+  width: 80%; /* Largura do quadrado do formulário */
+  max-width: 500px; /* Largura máxima para telas grandes */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-top: 20px;
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+  margin-bottom: 20px
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: calc(100% - 20px); /* Subtrai o padding dos lados */
+  padding: 10px;
+  margin-bottom: 15px; /* Espaçamento entre os campos */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between; /* Espaçamento entre os botões */
+}
+
+.btn-clear,
+.btn-send {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-clear {
+  background-color: #add8e6; /* Azul claro */
+}
+
+.btn-send {
+  background-color: #00008b; /* Azul escuro */
+  color: white;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 20px;
+}
+/* ------- Rodapé ----------*/
+
+#footer-section {
+  background-color: white;
+  text-align: center; /* Centraliza o conteúdo */
+  padding: 20px 0; /* Espaçamento vertical */
+}
+
+#footer-section img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+.font-secondary {
+  font-family: var(--font-secondary);
+}

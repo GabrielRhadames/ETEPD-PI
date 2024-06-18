@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Links abaixo derivam do site de ícones para o title-->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>ETEPD</title>
+  <!-- Inclua o CSS do Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Inclua os ícones do Bootstrap se você estiver usando-os -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.0.0-alpha5/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#notice-board-section">Avisos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#schedule-ds-section">Horários</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#school-calendar-section">Calendário Escolar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#courses-jobs-section">Cursos e Vagas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-section">Fale Conosco</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <header>
+    <div class="img-wrapper">
+      <img src="./images/ETEPDBackground-vert.jpg" alt="">
+    </div>
+    <div class="banner-content">
+      <h1>Escola tecnica Porto Digital <br> Portal Professor/Aluno</h1>
+      <p>Saiba mais sobre nós!</p>
+      <a href="https://sisacad.educacao.pe.gov.br/sissel/seip/index.php?p=polo&id=446"> <button>Site Oficial</button> </a>
+    </div>
+  </header>
+
+
+  <!-- Nova seção para o quadro de avisos -->
+  <section id="notice-board-section" class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="notice-board">
+          <h2>Quadro de Avisos</h2>
+          <div class="row">
+            <!-- Primeira coluna de avisos -->
+            <div class="col-md-5">
+              <!-- primeiros 5 avisos aqui -->
+              <div class="alert alert-primary" role="alert">
+                Aviso 1: Reunião geral na próxima sexta-feira às 15h.
+              </div>
+              <div class="alert alert-secondary" role="alert">
+                Aviso 2: Relatório financeiro disponível na intranet.
+              </div>
+              <div class="alert alert-secondary" role="alert">
+                Aviso 3: Relatório financeiro disponível na intranet.
+              </div>
+              <div class="alert alert-secondary" role="alert">
+                Aviso 4: Relatório financeiro disponível na intranet.
+              </div>
+              <div class="alert alert-secondary" role="alert">
+                Aviso 5: Relatório financeiro disponível na intranet.
+              </div>
+
+            </div>
+            <!-- Segunda coluna de avisos -->
+            <div class="col-md-5">
+              <!-- Próximos 5 avisos aqui -->
+              <div class="alert alert-primary" role="alert">
+                Aviso 6: Reunião geral na próxima sexta-feira às 15h.
+              </div>
+              <div class="alert alert-secondary" role="alert">
+                Aviso 7: Relatório financeiro disponível na intranet.
+              </div>
+              <div class="alert alert-secondary" role="alert">
+                Aviso 8: Relatório financeiro disponível na intranet.
+              </div>
+              <div class="alert alert-secondary" role="alert">
+                Aviso 9: Relatório financeiro disponível na intranet.
+              </div>
+              <div class="alert alert-secondary" role="alert">
+                Aviso 10: Relatório financeiro disponível na intranet.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Seção para os horários Desenvolvimento de Sistemas -->
+  <section id="schedule-ds-section" class="container-fluid schedule-section">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2>Horários Desenvolvimento de Sistemas</h2>
+        <div class="table-responsive">
+
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Segunda-feira</th>
+                <th scope="col">Terça-feira</th>
+                <th scope="col">Quarta-feira</th>
+                <th scope="col">Quinta-feira</th>
+                <th scope="col">Sexta-feira</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>19h - 20h: Aula 1<br>Professor: João Silva</td>
+                <td>19h - 20h: Aula 1<br>Professor: Ana Costa</td>
+                <td>19h - 20h: Aula 1<br>Professor: Pedro Rocha</td>
+                <td>19h - 20h: Aula 1<br>Professor: Carla Dias</td>
+                <td>19h - 20h: Aula 1<br>Professor: Lucas Moura</td>
+              </tr>
+              <tr>
+                <td>20h - 21h: Aula 2<br>Professor: Maria Souza</td>
+                <td>20h - 21h: Aula 2<br>Professor: Ricardo Oliveira</td>
+                <td>20h - 21h: Aula 2<br>Professor: Fernanda Lima</td>
+                <td>20h - 21h: Aula 2<br>Professor: Tiago Gomes</td>
+                <td>20h - 21h: Aula 2<br>Professor: Sofia Neves</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção para os horários Multimídia -->
+  <section id="schedule-mm-section" class="container-fluid schedule-section">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2>Horários Multimídia</h2>
+        <div class="table-responsive">
+
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Segunda-feira</th>
+                <th scope="col">Terça-feira</th>
+                <th scope="col">Quarta-feira</th>
+                <th scope="col">Quinta-feira</th>
+                <th scope="col">Sexta-feira</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>19h - 20h: Aula 1<br>Professor: Felipe Araújo</td>
+                <td>19h - 20h: Aula 1<br>Professor: Beatriz Castro</td>
+                <td>19h - 20h: Aula 1<br>Professor: Claudio Mendes</td>
+                <td>19h - 20h: Aula 1<br>Professor: Daniela Ribeiro</td>
+                <td>19h - 20h: Aula 1<br>Professor: Eduardo Alves</td>
+              </tr>
+              <tr>
+                <td>20h - 21h: Aula 2<br>Professor: Gabriela Souza</td>
+                <td>20h - 21h: Aula 2<br>Professor: Henrique Faria</td>
+                <td>20h - 21h: Aula 2<br>Professor: Isabela Freitas</td>
+                <td>20h - 21h: Aula 2<br>Professor: Joaquim Barbosa</td>
+                <td>20h - 21h: Aula 2<br>Professor: Leticia Costa</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nova seção Calendário Escolar -->
+  <section id="school-calendar-section">
+    <h2>Calendário Escolar</h2>
+    <img src="./images/calendario.png" alt="Calendário Escolar">
+    <p class="font-action">✅ Calendário ESCOLAR 2024 completo: <a
+        href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:e2475cd3-c63e-4624-8aee-de2f937bf9be"
+        target="_blank">Acesse aqui</a></p>
+  </section>
+
+
+  <!-- Nova seção Cursos e Vagas de Empregos -->
+  <section id="courses-jobs-section">
+    <h2 class="font-primary">Cursos e Vagas de Empregos</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 jobs-column">
+          <h3 class="font-secondary">Vagas de Emprego</h3>
+          <ul>
+            <li>Desenvolvedor Front-End</li>
+            <li>Analista de Sistemas</li>
+            <li>Designer Gráfico</li>
+            <li>Gerente de Projetos</li>
+            <li>Engenheiro de Software</li>
+          </ul>
+        </div>
+        <div class="col-md-6 courses-column">
+          <h3 class="font-secondary">Vagas de Cursos</h3>
+          <ul>
+            <li>Curso de Web Design</li>
+            <li>Curso de JavaScript Avançado</li>
+            <li>Curso de UX/UI Design</li>
+            <li>Curso de Análise de Dados</li>
+            <li>Curso de Desenvolvimento Mobile</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Seção Fale Conosco -->
+  <section id="contact-section">
+    <h2 class="font-primary">Fale Conosco</h2>
+    <div class="center-form">
+
+      <div class="form-container">
+
+        <form id="contact-form" action="Cololar depois a URL de envio" method="GET">
+          <div class="form-group">
+            <label for="full-name">Nome Completo</label>
+            <input type="text" id="full-name" name="full-name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="course">Escolha qual curso</label>
+            <select id="course" name="course">
+              <option value="">Selecione um curso</option>
+              <option value="ds-mod1">Desenvolvimento de sistemas módulo 1</option>
+              <option value="ds-mod2">Desenvolvimento de sistemas módulo 2</option>
+              <option value="multimedia">Multimídia</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <textarea id="subject" name="subject"></textarea>
+          </div>
+          <div class="form-buttons">
+            <button type="reset" class="btn-clear">Limpar</button>
+            <button type="submit" class="btn-send">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <h4 class="font-primary">Ou se preferir, entre em contato direto conosco:</h4>
+      <p class="font-secondary">Telefone(s): (81) 3181-4869</p>
+      <p class="font-secondary">Endereço de e-mail: eteportodigital@gmail.com</p>
+    </div>
+  </section>
+
+  <footer id="footer-section">
+    <img src="images/rodape.png" alt="Rodapé" />
+  </footer>
+
+
+</body>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</html>
